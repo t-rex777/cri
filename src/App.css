@@ -40,24 +40,6 @@ body{
  
 }
 
-@media only screen and (max-width: 700px) {
-  .App-header {
-    display: flex;
-   flex-direction: column;
-  }
-  .left , .right{
-    width: 100vw;
-  }
-  .trophy{
-    display: block;
-    width: 30%;
-    margin : 0 auto;
-  }
-  ul{
-    margin-right:13px ;
-  }
-
-}
 
 /***********************BODY  *****************************/
 .pumps {
@@ -107,4 +89,26 @@ footer {
   *{
     font-size: 12px;
   }
+}
+@media only screen and (max-width: 700px) {
+  .App-header {
+    display: flex;
+   flex-direction: column;
+  }
+  .left , .right{
+    width: 100vw;
+  }
+  .trophy{
+    display: block;
+    width: 30%;
+    margin : 0 auto;
+  }
+  ul{
+    margin-right:13px ;
+  }
+
+  .pumps{
+    width: 100%;
+  }
+
 }
