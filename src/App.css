@@ -1,38 +1,110 @@
-.App {
+* {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+body{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 252, 216, 1) 51%,
+    rgba(255, 248, 171, 1) 100%
+  );
+}
+/************************* HEADER *********************************/
+.App-header {
+  display: flex;
+  font-weight: bold;
+}
+.left {
+  width: 35vw;
+}
+.right{
+  width:65vw;
+}
+.bold {
+  font-weight: 900;
+}
+.trophy {
+  width: 90%;
+  /* margin-top: 20%; */
+}
+.photograph {
+  width: 95%;
+}
+.logo {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+ 
+}
+
+@media only screen and (max-width: 700px) {
+  .App-header {
+    display: flex;
+   flex-direction: column;
+  }
+  .left , .right{
+    width: 100vw;
+  }
+  .trophy{
+    display: block;
+    width: 30%;
+    margin : 0 auto;
+  }
+  ul{
+    margin-right:13px ;
+  }
+
+}
+
+/***********************BODY  *****************************/
+.pumps {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 78%;
+}
+hr {
+  border: #e93136 solid 0.5px;
+  height: 1px;
+  background-color: #e93136;
+  margin: 0 1.7%;
+}
+.info {
+  margin: 1rem 2%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*****************************FOOTER  *******************/
+footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #ec3237;
+  color: #fff;
+  padding: 1.5% 9% 4% 9%;
+  margin: 5px;
+}
+.icon {
+  width: 2rem;
+  margin-bottom: 15px;
+  margin-right: 7px;
+}
+.foobar {
+  display: flex;
+  font-size: 200%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width : 968px){
+  footer{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .foobar{
+    margin : 0 auto;
+  }
+  *{
+    font-size: 12px;
   }
 }
